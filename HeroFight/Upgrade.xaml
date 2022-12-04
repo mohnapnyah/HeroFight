@@ -1,0 +1,29 @@
+﻿<Window x:Class="HeroFight.Upgrade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeroFight"
+        mc:Ignorable="d"
+        Title="Upgrade" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" Text="Str" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,134,0,0" TextWrapping="Wrap" Text="Dex" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" Text="Luck" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,201,0,0" TextWrapping="Wrap" Text="Con" VerticalAlignment="Top" Cursor=""/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="Int" VerticalAlignment="Top"/>
+        <Button x:Name="strUp" Content="+" HorizontalAlignment="Left" Margin="425,101,0,0" VerticalAlignment="Top" Click="strUp_Click"/>
+        <Button x:Name="dexUp" Content="+" HorizontalAlignment="Left" Margin="425,130,0,0" VerticalAlignment="Top" Click="dexUp_Click"/>
+        <Button x:Name="LuckUp" Content="+" HorizontalAlignment="Left" Margin="425,167,0,0" VerticalAlignment="Top" Click="LuckUp_Click"/>
+        <Button x:Name="intUp" Content="+" HorizontalAlignment="Left" Margin="425,234,0,0" VerticalAlignment="Top" Click="intUp_Click"/>
+        <Button x:Name="conUp" Content="+" HorizontalAlignment="Left" Margin="425,199,0,0" VerticalAlignment="Top" Click="conUp_Click"/>
+        <Button x:Name="strDown" Content="-" HorizontalAlignment="Left" Margin="369,101,0,0" VerticalAlignment="Top" Click="strDown_Click"/>
+        <Button x:Name="dexDown" Content="-" HorizontalAlignment="Left" Margin="369,130,0,0" VerticalAlignment="Top" Click="dexDown_Click"/>
+        <Button x:Name="LuckDown" Content="-" HorizontalAlignment="Left" Margin="369,167,0,0" VerticalAlignment="Top" Click="LuckDown_Click"/>
+        <Button x:Name="conDown" Content="-" HorizontalAlignment="Left" Margin="369,199,0,0" VerticalAlignment="Top" Click="conDown_Click"/>
+        <Button x:Name="intDown" Content="-" HorizontalAlignment="Left" Margin="369,230,0,0" VerticalAlignment="Top" Click="intDown_Click"/>
+        <ComboBox x:Name="mujiki" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="mujiki_SelectionChanged"/>
+        <TextBox x:Name="skills" HorizontalAlignment="Left" Margin="200,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
